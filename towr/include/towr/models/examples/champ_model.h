@@ -45,14 +45,14 @@ public:
   {
     const double x_nominal_b = 0.175;
     const double y_nominal_b = 0.165;
-    const double z_nominal_b = -0.282;
+    const double z_nominal_b = -0.21;
 
     nominal_stance_.at(LF) <<  x_nominal_b,   y_nominal_b, z_nominal_b;
     nominal_stance_.at(RF) <<  x_nominal_b,  -y_nominal_b, z_nominal_b;
     nominal_stance_.at(LH) << -x_nominal_b,   y_nominal_b, z_nominal_b;
     nominal_stance_.at(RH) << -x_nominal_b,  -y_nominal_b, z_nominal_b;
 
-    max_dev_from_nominal_ << 0.15, 0.1, 0.10;
+    max_dev_from_nominal_ << 0.1, 0.08, 0.05;
   }
 };
 
