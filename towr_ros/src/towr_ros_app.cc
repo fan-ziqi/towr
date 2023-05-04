@@ -92,7 +92,7 @@ public:
   void SetIpoptParameters(const TowrCommandMsg& msg) override
   {
     // the HA-L solvers are alot faster, so consider installing and using
-    solver_->SetOption("linear_solver", "mumps"); // ma27, ma57
+    solver_->SetOption("linear_solver", "ma27"); // mumps, ma57
 
     // Analytically defining the derivatives in IFOPT as we do it, makes the
     // problem a lot faster. However, if this becomes too difficult, we can also
