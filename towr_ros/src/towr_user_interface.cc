@@ -67,16 +67,16 @@ TowrUserInterface::TowrUserInterface ()
   goal_geom_.lin.p_ << 2.1, 0.0, 0.0;
   goal_geom_.ang.p_ << 0.0, 0.0, 0.0; // roll, pitch, yaw angle applied Z->Y'->X''
 
-  robot_      = RobotModel::Monoped;
+  robot_      = RobotModel::Champ;
   terrain_    = HeightMap::FlatID;
-  gait_combo_ = GaitGenerator::C0;
+  gait_combo_ = GaitGenerator::C2;
   total_duration_ = 2.4;
   visualize_trajectory_ = false;
   plot_trajectory_ = false;
   replay_speed_ = 1.0; // realtime
   optimize_ = false;
   publish_optimized_trajectory_ = false;
-  optimize_phase_durations_ = false;
+  optimize_phase_durations_ = true;
 
   PrintScreen();
 }
